@@ -1,0 +1,38 @@
+.landing{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top:0;
+    /* background-color: rgb(32, 32, 32); */
+    background-color:  #4a5b70;
+    margin: 0;
+    text-align: center;
+}
+
+.landing div{
+    margin-top: 20%;
+    width: 80%;
+    /* background-color: #333; */
+    margin-left: 10%;
+    font-size: 42px;
+    text-align: center;
+    justify-content: center;
+}
+
+.landing h2{
+    color: rgba(0, 0 ,0, .7);
+    font-weight: 100;
+}
+
+.landing span{
+    text-align: left;
+    float: left;
+    margin-left: 7%;
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, .7);
+    font-style: oblique;
+    float: right;
+    margin-top: 20px;
+    margin-right: 80px;
+}
