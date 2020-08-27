@@ -1,0 +1,36 @@
+#retentionTitle{
+    width: 100%;
+    margin-top: 5%;
+}
+
+#retentionChart{
+    margin-top: 3%;
+}
+
+.retentionSortChange{
+    background-color: #cc9a1e;
+    border: none;
+    outline: none;
+    width: 300px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.retentionSortChange:hover{
+    background-color: rgba(0, 0, 0, .1);
+}
+
+#retInfoColumn{
+    margin-left: 30px;
+}
+
+#retentionInfo{
+    margin-top: 15%;
+    font-size: 24px;
+}
+
+#retentionKey{
+    position: static;
+    margin-top: 5%;
+}
+

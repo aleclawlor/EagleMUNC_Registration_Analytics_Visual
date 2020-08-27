@@ -5,17 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css" type="text/css">
     <link rel="stylesheet" href="./css/landing.css" type="text/css">
+    <link rel="stylesheet" href="./css/geography.css" type="text/css">
+    <link rel="stylesheet" href="./css/e8Monthly.css" type="text/css">
+    <link rel="stylesheet" href="./css/returningSchools.css" type="text/css">
+    <link rel="stylesheet" href="./css/retention.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.0/milligram.css">
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <title></title>
+    <title>EagleMUNC VIII Registration Data</title>
 </head>
 <body>
     <div class="landing">
-        <div>
-            <h2>EagleMUNC Past Registration Data</h2>
-            <span>A visual report by the PR Department</span>
+        <h2 class="landingTitle">EagleMUNC Past Registration Data</h2>
+        <span>A visual report by the PR Department</span>
+    </div>
+    <div class="contentPage">
+        <div class="container">
+            <div class="row" id="mapHeader">
+                <h2>Despite not having a conference, EagleMUNC VIII achieved great heights.</h2>
+            </div>
+            <div class="row">
+                <ul id="mapButtons">
+                    <li><p class="mapButton" id="worldButton"></p></li>
+                    <li><p class="mapButton" id="unitedStatesButton"></p></li>
+                    <li><p class="mapButton" id="northeastButton"></p></li>
+                </ul>
+            </div>
+        <div class="row">
+            <div class="column" id="map"></div>
+            <div class="column" id="donutChart"></div>
+        </div>
         </div>
     </div>
+    <div class="contentPage">
+        <div class="container">
+            <div class="row">
+                <h2>Monthly Registration for E8</h2>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div id="e8MonthlyTimeline"></div>
+                </div>
+                <div class="column">
+                    <div id="timelineKey"></div>
+                </div>
+                <!-- <div class="column">
+                    <div id="e8RegistrationMatrix"></div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="contentPage">
+        <div class="container">
+            <div class="row">
+                <h2>Delegate Registration For E8 By Registration Period</h2>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div id="registrationGrid"></div>
+                </div>
+                <div class="column">
+                    <div id="percentageInfo">
+                        <h3>Total Delegation Count: <span id="delegationCountTotal"></span> </h3>
+                        <p><span id="early"></span>% of delegates were registered during early registration</p>
+                        <p><span id="regular"></span>% of delegates were registered during regular registration</p>
+                        <p><span id="late"></span>% of delegates were registered during late registration</p>
+                        <div id="gridKey"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contentPage">
+        <div class="container">
+            <div class="row">
+                <h3 id="retentionHeader">Below are the schools that have attended EagleMUNC at least 3 times, along with their delegate counts over the years. Each colored line represents a different school.</h3>
+            </div>  
+            <div class="row">
+                <div class="column">
+                    <div id="eaglemuncRetention"></div>
+                </div>
+                <div class="column">
+                    <label for="retentionNumberSelection">EagleMUNC Attendances: </label>
+                    <select id="retentionNumberSelection">
+                        <option value="7">7</option>
+                        <option value="6">6</option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                    </select>
+                    <p id="retentionParagraph">On average, schools that have attended <span id='schoolCountSpan'></span> conferences average a delegation of <span id="delegateCountSpan"></span> delegates. Combined, these schools make up about <span id="percentageTotal"></span>% of the total EagleMUNC participants per year.</p>
+                    <p id="disclaimer">
+                        *** Analytics do not reflect data from EI and EII, as this registration data could not be found for these conferences. Additionally, delegate information appeared to be incomplete for some schools, as can be seen by some of the lines that are inconsistent with the number of conferences attended.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+    </div>
+    <div class="contentPage">
+        <div class="container">
+            <div class="row">
+                <h2 id="retentionTitle">EagleMUNC Retention By Conference</h2>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div id="retentionChart"></div>
+                </div>
+                <div class="column" id="retInfoColumn">
+                    <button id="allSchoolsSort" class="retentionSortChange">Sort by all schools</button>
+                    <button id="firstVisitSort" class="retentionSortChange">Sort by First Visit Attendees</button>
+                    <button id="compareRetention" class="retentionSortChange">Compare all vs. first-time attendees</button>
+                    <p id="retentionInfo">Currently showing retention data for all schools involved (per conference)</p>
+                    <div id="retentionKey"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='./js/retention.js'></script>
+    <script src='./js/worldMap.js'></script>
+    <script src='./js/e8Monthly.js'></script>
+    <script src='./js/registrationGrid.js'></script>
+    <script src='./js/returningSchools.js'></script>
 </body>
 </html>

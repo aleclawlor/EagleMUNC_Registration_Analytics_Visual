@@ -1,0 +1,70 @@
+#mapButtons{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 27.5%;
+    width: 45%;
+    height: 3px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    background-color: #cc9a1e;
+}
+
+.mapButton{
+    background-color:  #cc9a1e;
+    color: #333;
+    width: 20px;
+    height: 20px;
+    font-weight: 400;
+    border-radius: 50%;
+    margin-top: 2em;
+}
+
+.mapButton:hover{
+    cursor: pointer;
+}
+
+#worldButton{
+    float: left;
+    margin-right: 0;
+    margin-left: 0
+}
+
+#unitedStatesButton{
+    margin-left: 14em;
+    margin-right: 14em;
+}
+
+#northeastButton{
+    float: right;
+    margin-right: 0;
+    margin-left: 0
+}
+
+#map{
+    height: 400px;
+    width: 1000px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 10%;
+    transform: translate(-5%, 0);
+  }
+  
+  #donutChart{
+    height: 400px;
+    width: 50%;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  #mapHeader{
+      color: #002456
+  }

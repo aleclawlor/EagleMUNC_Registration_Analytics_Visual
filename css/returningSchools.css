@@ -1,0 +1,36 @@
+#retentionHeader{
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+#eaglemuncRetention{
+    width: 100%;
+    height: 550px;
+    margin-top: 5%;
+}
+
+#retentionNumberSelection{
+    color: #000
+}
+
+#retentionSortButton{
+    color: #333;
+    font-weight: 300;
+    border: none;
+    background-color: #cc9a1e;
+}
+
+#retentionParagraph{
+    font-size: 20px;
+    margin-top: 10%;
+    width: 150%
+}
+
+#delegateCountSpan{
+}
+
+#disclaimer{
+    margin-top: 20%;
+    font-style: italic;
+    width: 150%
+}

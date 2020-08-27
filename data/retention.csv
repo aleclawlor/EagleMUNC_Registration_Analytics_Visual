@@ -1,0 +1,9 @@
+conference,schoolsInvolved,schoolsReturned,newSchools,delegatesTotal, numDelegatesInReturningSchools,delegateRetention,schoolRetention
+E1,41,41,,,,,100
+E2,44,13,3,,,,30
+E3,32,21,20,513,358,70,66
+E4,42,20,19,682,349,51,48
+E5,40,21,20,606,358,59,53
+E6,41,24,19,680,410,60,59
+E7,49,,,730,,50,
+E8,,,,,,,

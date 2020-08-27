@@ -1,0 +1,30 @@
+#e8MonthlyTimeline{
+    width: auto;
+    height: auto;
+    margin-top: 10%;
+}
+
+#timelineKey{
+    margin-top: 2%;
+    height: 100%;
+    width: 100%;
+}
+
+#e8RegistrationMatrix{
+    height: 100%;
+    width: 80%;
+    margin-top: 35%;
+} 
+
+#registrationGrid{
+}
+
+#percentageInfo{
+    margin-left: 20%;
+    padding-top: 20%;
+}
+
+#gridKey{
+    padding-top: 50px;
+    height: 250px;
+}
