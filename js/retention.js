@@ -372,15 +372,16 @@ const drawCompareChart = () => {
             .append('rect')
                 .attr('class', 'bar')
                 .attr('x', (d, i) => xScale(i) + 90)
-                .attr('y', (d, i) => yScale(Number(d.schoolRetention)))
+                .attr('y', (d, i) => yScale(Number(d.schoolRetention))+margin.top)
                 .attr('width', 35)
-                .attr('height', d => height - yScale(Number(d.schoolRetention)))
+                .attr('height', d => height - yScale(Number(d.schoolRetention))-margin.top)
                 .attr('fill', compareChartColors[0])
 
 
         retentionDataTotal = retentionDataTotal.filter(d => {
             return ['E3', 'E4', 'E5', 'E6', 'E7'].includes(d.conference)
         })
+
         // draw rectangles for total attendance
         svg.selectAll('.barTotal')
             .data(retentionDataTotal)
@@ -388,9 +389,9 @@ const drawCompareChart = () => {
             .append('rect')
                 .attr('class', 'baTotalr')
                 .attr('x', (d, i) => xScale(i) + 130)
-                .attr('y', (d, i) => yScale(Number(d.schoolRetention)))
+                .attr('y', (d, i) => yScale(Number(d.schoolRetention))+margin.top)
                 .attr('width', 35)
-                .attr('height', d => height - yScale(Number(d.schoolRetention)))
+                .attr('height', d => height - yScale(Number(d.schoolRetention)) - margin.top)
                 .attr('fill', compareChartColors[1])
         
         // // create groups for each series 

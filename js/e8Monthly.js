@@ -147,9 +147,9 @@ const drawBarChart = () => {
                 .attr('class', 'bar')
                 .attr('transform', 'translate(13, -20)')
                 .attr('x', (d, i) => {return xScale(i)})
-                .attr('y', (d, i) => {return yScale(d[0])})
+                .attr('y', (d, i) => {return yScale(d[0]) + margin.top})
                 .attr('width', xScale.bandwidth() - 5)
-                .attr('height', d => {return height - yScale(d[0])})
+                .attr('height', d => {return height - yScale(d[0]) - margin.top})
                 .attr('fill', d => {
                     if(d[1] >= 5 && d[1] <= 7){
                         return '#cc9a1e'
